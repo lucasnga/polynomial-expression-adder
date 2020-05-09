@@ -8,13 +8,23 @@
 </head>
 <body>
     <h1>Expression adder</h1>
-    <label for="inputs-form">Add expression to list</label>
+    <label for="inputs-form">
+        Add two expressions
+    </label>
+    <p>
+        ex:<br />
+        2x^2 + 3 = [ [2, 2], [3] ]<br />
+        3x^3 + x^2 = [ [3,3], [1,2] ]<br />
+    </p>
     <form id="inputs-form">
+        <label for="input-one">Expresions:</label>
         <input type="text" id="input-one" />
         <input type="text" id="input-two" />
         <input type="submit" value="Add" />
     </form>
-    <span>Result:</span>
-    <div id="result"></div>
+    <p>
+        <span>Result:</span>
+    </p>
+    <span id="result"></span>
 </body>
 </html>

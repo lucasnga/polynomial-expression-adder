@@ -3,6 +3,11 @@
  *    which have a structure in which each item has a specific
  *    meaning:
  *
+ *    constrain - number
+ *    exponential - number
+ *    term - [ constrain, exponential ]
+ *    expression - [ term, ... ]
+ *
  *  ex:
  *   2x^2 + 3 = [ [2, 2], [3] ]
  *   3x^3 + x^2 = [ [3,3], [1,2] ]
@@ -11,6 +16,8 @@
  *
  * @param {array[]} expressionOne - as described above
  * @param {array[]} expressionTwo - as described above
+ * @return {array[]} - as described above
+ *
  */
 
 const adder = (expressionOne, expressionTwo) => {

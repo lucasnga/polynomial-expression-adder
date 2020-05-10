@@ -1,8 +1,8 @@
 Expression Adder (for ETHWORKS)
 ================
 
-[![GitHub issues](https://img.shields.io/github/issues/lucasnga/polynomial-expression-adder.svg?token=git-token)](https://github.com/lucasnga/polynomial-expression-adder/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/lucasnga/polynomial-expression-adder.svg?token=git-token)](https://github.com/lucasnga/polynomial-expression-adder/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/lucasnga/polynomial-expression-adder.svg?token=344898efb1f72e23bcabdf9ae011d7589fba8d3b)](https://github.com/lucasnga/polynomial-expression-adder/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/lucasnga/polynomial-expression-adder.svg?token=344898efb1f72e23bcabdf9ae011d7589fba8d3b)](https://github.com/lucasnga/polynomial-expression-adder/pulls)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Overview

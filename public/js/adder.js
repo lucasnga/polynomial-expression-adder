@@ -16,8 +16,8 @@
  *
  * @param {array[]} expressionOne - as described above
  * @param {array[]} expressionTwo - as described above
- * @return {array[]} - as described above
  *
+ * @return {array[]} - as described above
  */
 
 const adder = (expressionOne, expressionTwo) => {

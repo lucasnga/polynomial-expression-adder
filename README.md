@@ -4,8 +4,21 @@ Expression Adder
 Overview
 --------
 
-
-
+ Adder takes two arrays as arguments. Those arrays contains arrays\
+     which have a structure in which each item has a specific\
+     meaning:
+ 
+     constrain - number
+     exponential - number
+     term - [ constrain, exponential ]
+     expression/argument - [ term, term, ... ]
+ 
+   ex:
+    2x^2 + 3 = [ [2, 2], [3] ]
+    3x^3 + x^2 = [ [3,3], [1,2] ]
+ 
+  The return value is an array of same structure as arguments.
+ 
 Installation and running
 ------------------------
 

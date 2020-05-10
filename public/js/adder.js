@@ -53,9 +53,9 @@ const adder = (expressionOne, expressionTwo) => {
     } else {
       if (inputTermsItem[1] > highestDegree) {
         highestDegree = inputTermsItem[1];
-        resultExpression.unshift(inputTermsItem);
+        resultExpression.splice(0, 0, inputTermsItem);
       } else {
-        resultExpression.push(inputTermsItem);
+        resultExpression.splice(len, 0, inputTermsItem);
       }
     }
   }

@@ -51,13 +51,11 @@ const adder = (expressionOne, expressionTwo) => {
         resultExpression.splice(nullConstantsIndex, 1);
       }
     } else {
-      const newResultTerm = inputTerms[i];
-
-      if (newResultTerm[1] > highestDegree) {
-        highestDegree = newResultTerm[1];
-        resultExpression.unshift(newResultTerm);
+      if (inputTermsItem[1] > highestDegree) {
+        highestDegree = inputTermsItem[1];
+        resultExpression.unshift(inputTermsItem);
       } else {
-        resultExpression.push(newResultTerm);
+        resultExpression.push(inputTermsItem);
       }
     }
   }

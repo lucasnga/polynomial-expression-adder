@@ -21,15 +21,15 @@
  */
 
 const adder = (expressionOne, expressionTwo) => {
-  let inputTerms = expressionOne.concat(expressionTwo);
-  let resultExpression = [];
-  let highestDegree = 0;
+  let inputTerms = expressionOne.concat(expressionTwo),
+    resultExpression = [],
+    highestDegree = 0;
 
   for (let i = 0, len = inputTerms.length; i < len; i++) {
     const inputTermsItem = inputTerms[i];
-    let sumOfConstants = null;
-    let nullConstantsIndex = null;
-    let sameExponentFound = false;
+    let sumOfConstants = null,
+      nullConstantsIndex = null,
+      sameExponentFound = false;
 
     for (let j = 0, length = resultExpression.length; j < length; j++) {
       const resultExpressionItem = resultExpression[j];

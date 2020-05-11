@@ -1,4 +1,4 @@
-import { adder } from "./adder.js";
+import { expressionAdder } from "./adder_obj.js";
 
 // I'd use a react.js, but I didnt't want to overreact :)
 const formElem = document.getElementById("inputs-form");
@@ -13,13 +13,13 @@ formElem.addEventListener("submit", (e) => {
   resultBox.style.display = "block";
 
   // I know that "eval" i evil ;) - it's only for user interface presentation
-  const result = adder(eval(inputElemOne.value), eval(inputElemTwo.value));
+  const result = expressionAdder(eval(inputElemOne.value), eval(inputElemTwo.value));
   resultElem.textContent = JSON.stringify(result, null, 4);
 
-  prettyPrint.innerHTML = result
+  prettyPrint.innerHTML = Object.keys(result)
     .map((term, index, expression) => {
-      const constant = term[0];
-      const exponential = term[1];
+      const constant = result[term];
+      const exponential = term;
 
       return `<span>${constant > 1 ? constant : ""}${
         exponential >= 1 || exponential < 0 ? "x" : ""

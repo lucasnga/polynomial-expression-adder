@@ -1,8 +1,8 @@
 Expression Adder (for ETHWORKS)
 ================
 
-[![GitHub issues](https://img.shields.io/github/issues/lucasnga/polynomial-expression-adder.svg?token=344898efb1f72e23bcabdf9ae011d7589fba8d3b)](https://github.com/lucasnga/polynomial-expression-adder/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/lucasnga/polynomial-expression-adder.svg?token=344898efb1f72e23bcabdf9ae011d7589fba8d3b)](https://github.com/lucasnga/polynomial-expression-adder/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/lucasnga/polynomial-expression-adder.svg?token=AD6AKN75EDJYJ2JFQIA5KCK6XD352)](https://github.com/lucasnga/polynomial-expression-adder/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/lucasnga/polynomial-expression-adder.svg?token=AD6AKN75EDJYJ2JFQIA5KCK6XD352)](https://github.com/lucasnga/polynomial-expression-adder/pulls)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Overview
@@ -20,12 +20,12 @@ example:
     2x^2 + 3 = [ [2, 2], [3] ]
     3x^3 + x^2 = [ [3,3], [1,2] ]
  
-The return value is an array of same structure as arguments.
+The return value is an object  each key is Exponential (and c when term without Variable - [constant term](https://en.wikipedia.org/wiki/Constant_term])) and value is Constant.
   
-<img src="https://raw.githubusercontent.com/lucasnga/polynomial-expression-adder/master/public/assets/demo.png?token=git-token">
+<img src="https://raw.githubusercontent.com/lucasnga/polynomial-expression-adder/master/public/assets/demo_obj.png?token=AD6AKN75EDJYJ2JFQIA5KCK6XD352">
 
 ```js
- const result = adder(
+ const result = expressionAdder(
   // 2x^2 + 3
   [ [2, 2], [3] ],
   // 3x^3 + x^2  
@@ -35,7 +35,7 @@ The return value is an array of same structure as arguments.
 debugger;
 
 // 3x^3 + 3x^2 + 3
-result; // [ [ 3, 3 ], [ 3, 2 ], [ 3 ] ]
+result; // { "2": 3, "3": 3, "c": 3 }
 ``` 
 
 Installation and running

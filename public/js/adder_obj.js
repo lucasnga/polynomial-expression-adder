@@ -22,14 +22,14 @@
 
 export const expressionAdder = (expressionOne, expressionTwo) => {
   let inputTerms = expressionOne.concat(expressionTwo),
-    resultExpression = {};
+    resultExpression = {},
+    length = inputTerms.length;
 
-  let length = inputTerms.length;
-  while (length) {
+  while (length--) {
     const [
       inputTermsItemConstant,
       inputTermsItemExponential = "c",
-    ] = inputTerms[length - 1];
+    ] = inputTerms[length];
     const addedValue =
       (resultExpression[inputTermsItemExponential] || 0) +
       (inputTermsItemConstant || 0);
@@ -39,7 +39,6 @@ export const expressionAdder = (expressionOne, expressionTwo) => {
     } else {
       delete resultExpression[inputTermsItemExponential];
     }
-    length--;
   }
 
   return resultExpression;

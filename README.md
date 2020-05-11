@@ -20,7 +20,7 @@ example:
     2x^2 + 3 = [ [2, 2], [3] ]
     3x^3 + x^2 = [ [3,3], [1,2] ]
  
-The return value is an object  each key is Exponential (and c when term without Variable - [constant term](https://en.wikipedia.org/wiki/Constant_term])) and value is Constant.
+The return value is an object  each key is Exponential (and c when term without Variable - [constant term](https://en.wikipedia.org/wiki/Constant_term) and value is Constant.
   
 <img src="https://raw.githubusercontent.com/lucasnga/polynomial-expression-adder/master/public/assets/demo_obj.png?token=AD6AKN75EDJYJ2JFQIA5KCK6XD352">
 
